@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    
+        <img src="./img/money-img.png" alt="world-money" class="money-img">
+
+        <div class="container">
+            <label>Converter <b>de</b>:
+            <select class="select-from">
+                <option value="real">Real Brasileiro</option>
+            </select>
+            </label>
+            
+
+           <label>Converter <b>para</b>:
+            <select class="select-to" onchange="changeCurrency(), convertValues()">
+    
+                <option value="dolar">Dolar Americano</option>
+                <option value="euro">Euro</option>
+                <option value="libra">Libra</option>
+                
+            </select>
+            </label>
+
+            <label>
+                Valor:
+                <input class="input-value" placeholder="0,00">
+            </label>
+            
+
+            <button class="convert-button" onclick="convertValues()">Converter</button>
+
+
+            <section>
+
+            
+            <div class="box1">
+                <img src="./img/brasil.png" alt="logo-moeda-a-converter" class="currency-img-from">
+                <p class="currency-from">Real</p>
+                <p class="currency-value-from"><b>R$ 0,00</b></p>
+            </div>
+
+            
+
+            <img src="./img/vector.png" class="vector">
+
+           
+
+            <div class="box2">
+                <img src="./img/usa.png" alt="logo-moeda-convertida" class="currency-img-to">
+                <p class="currency-to">Dolar</p>
+                <p class="currency-value-to"><b>U$ 0,00</b></p>
+            </div>
+
+            
+        
+            </section>
+
+
+        
+        </div>
+    
+        <script src="./script.js"></script>
+    
+</body>
+</html>
